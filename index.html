@@ -63,8 +63,8 @@
     }
     .chip {
       display: inline-flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.08); 
-      border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 7px; padding: 0.25rem 0.65rem; 
-      font-family: 'JetBrains Mono', monospace; font-size: 0.73rem; font-weight: 500; 
+      border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 7px; padding: 0.3rem 0.75rem; 
+      font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 500; 
       color: rgba(255, 255, 255, 0.85); text-decoration: none; transition: 0.2s;
     }
     .chip.lang-active { background: rgba(245, 180, 50, 0.15); border-color: #f5c842; color: #f5c842; }
@@ -87,9 +87,10 @@
     ul { list-style-type: disc; padding-left: 1.5rem; color: rgba(255, 255, 255, 0.65); font-size: 0.85rem; line-height: 1.7; }
     li { margin-bottom: 0.4rem; }
     
+    /* UPDATED SPACING FOR PUNISHMENT ROWS */
     .punishment-row {
       display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-      padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 0.95rem 0.25rem; border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     .punishment-row:last-child { border-bottom: none; }
     
@@ -274,53 +275,54 @@
         </div>
 
         <div class="glass-card" style="padding:1.5rem;">
-          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:x-2rem y-0;">
-            <!-- Exactly as generated before -->
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Advertising</span><span class="chip" style="color:#f5c842; pointer-events: none;">4d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Promoting Hacked Clients</span><span class="chip" style="color:#f5c842; pointer-events: none;">7d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Advertising Social Media</span><span class="chip" style="color:#f5c842; pointer-events: none;">7d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Arguing over punishments</span><span class="chip" style="color:#f5c842; pointer-events: none;">10d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Asking Staff for Items/Perks</span><span class="chip" style="color:#f87171; pointer-events: none;">1d Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Automated / Ad Messages</span><span class="chip" style="color:#f5c842; pointer-events: none;">10d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Ban Evading</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Blackmailing</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Bug Exploiting</span><span class="chip" style="color:#f87171; pointer-events: none;">30d Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Scams (Any Type)</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Bypassing Chat Rules</span><span class="chip" style="color:#f5c842; pointer-events: none;">14d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Chargeback</span><span class="chip" style="color:#f87171; pointer-events: none;">5d Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Chat Flood</span><span class="chip" style="color:#f5c842; pointer-events: none;">14d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">DDos/Dox Threats</span><span class="chip" style="background:rgba(239,68,68,0.15);color:#fca5a5;border-color:#ef4444; pointer-events: none;">Network Blacklist</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Discord Invite Links</span><span class="chip" style="color:#f5c842; pointer-events: none;">30d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Discrimination / Racism</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Distributing / Asking for Nudes</span><span class="chip" style="background:rgba(239,68,68,0.15);color:#fca5a5;border-color:#ef4444; pointer-events: none;">Network Blacklist</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Encouraging Rule Breaking</span><span class="chip" style="color:#f5c842; pointer-events: none;">30d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Excessive Caps</span><span class="chip" style="color:#f5c842; pointer-events: none;">1d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Foreign Language</span><span class="chip" style="color:#f5c842; pointer-events: none;">30d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">General Rudeness/Swearing</span><span class="chip" style="color:#f5c842; pointer-events: none;">60d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Inappropriate Behavior</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Inappropriate Buildings</span><span class="chip" style="color:#f87171; pointer-events: none;">14d Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Inappropriate Usernames</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Inappropriate Nickname</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Inappropriate Skins/Capes</span><span class="chip" style="color:#f87171; pointer-events: none;">14d Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Light Advertising</span><span class="chip" style="color:#fcd34d; pointer-events: none;">Warn $\rightarrow$ 7d Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Map Exploitation</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Mute Evading</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Revealing hidden Staff</span><span class="chip" style="color:#f87171; pointer-events: none;">90d Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Rioting</span><span class="chip" style="background:rgba(239,68,68,0.15);color:#fca5a5;border-color:#ef4444; pointer-events: none;">Network Blacklist</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Selling Accounts</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban (Both)</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Staff/YT Impersonation</span><span class="chip" style="color:#f87171; pointer-events: none;">30d IP Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Staff Disrespect</span><span class="chip" style="color:#f87171; pointer-events: none;">100d IP Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Stat Boosting</span><span class="chip" style="color:#94a3b8; pointer-events: none;">Stats Reset</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Teaming / Assisting Hackers</span><span class="chip" style="color:#f87171; pointer-events: none;">60d Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Spawn Kill</span><span class="chip" style="color:#f87171; pointer-events: none;">30d Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Stream Snipe</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Threats (Death, Suicide)</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Mute</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">Unapproved Links</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban</span></div>
-            <div class="punishment-row"><span style="font-size:0.85rem;color:rgba(255,255,255,0.85);">TOS Violation</span><span class="chip" style="background:rgba(239,68,68,0.15);color:#fca5a5;border-color:#ef4444; pointer-events: none;">Network Blacklist</span></div>
+          <!-- UPDATED GRID SPACING -->
+          <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(350px, 1fr)); column-gap:2.5rem; row-gap:0.25rem;">
             
-            <div class="punishment-row" style="grid-column: 1 / -1; margin-top: 0.5rem; background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
-              <span style="font-size:0.85rem;color:rgba(255,255,255,0.85);font-weight:600;">Use of Hacks / Blacklisted Modifications</span>
-              <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Advertising</span><span class="chip" style="color:#f5c842; pointer-events: none;">4d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Promoting Hacked Clients</span><span class="chip" style="color:#f5c842; pointer-events: none;">7d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Advertising Social Media</span><span class="chip" style="color:#f5c842; pointer-events: none;">7d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Arguing over punishments</span><span class="chip" style="color:#f5c842; pointer-events: none;">10d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Asking Staff for Items/Perks</span><span class="chip" style="color:#f87171; pointer-events: none;">1d Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Automated / Ad Messages</span><span class="chip" style="color:#f5c842; pointer-events: none;">10d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Ban Evading</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Blackmailing</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Bug Exploiting</span><span class="chip" style="color:#f87171; pointer-events: none;">30d Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Scams (Any Type)</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Bypassing Chat Rules</span><span class="chip" style="color:#f5c842; pointer-events: none;">14d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Chargeback</span><span class="chip" style="color:#f87171; pointer-events: none;">5d Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Chat Flood</span><span class="chip" style="color:#f5c842; pointer-events: none;">14d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">DDos/Dox Threats</span><span class="chip" style="background:rgba(239,68,68,0.15);color:#fca5a5;border-color:#ef4444; pointer-events: none;">Network Blacklist</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Discord Invite Links</span><span class="chip" style="color:#f5c842; pointer-events: none;">30d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Discrimination / Racism</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Distributing / Asking for Nudes</span><span class="chip" style="background:rgba(239,68,68,0.15);color:#fca5a5;border-color:#ef4444; pointer-events: none;">Network Blacklist</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Encouraging Rule Breaking</span><span class="chip" style="color:#f5c842; pointer-events: none;">30d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Excessive Caps</span><span class="chip" style="color:#f5c842; pointer-events: none;">1d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Foreign Language</span><span class="chip" style="color:#f5c842; pointer-events: none;">30d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">General Rudeness/Swearing</span><span class="chip" style="color:#f5c842; pointer-events: none;">60d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Inappropriate Behavior</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Inappropriate Buildings</span><span class="chip" style="color:#f87171; pointer-events: none;">14d Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Inappropriate Usernames</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Inappropriate Nickname</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Inappropriate Skins/Capes</span><span class="chip" style="color:#f87171; pointer-events: none;">14d Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Light Advertising</span><span class="chip" style="color:#fcd34d; pointer-events: none;">Warn $\rightarrow$ 7d Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Map Exploitation</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Mute Evading</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Revealing hidden Staff</span><span class="chip" style="color:#f87171; pointer-events: none;">90d Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Rioting</span><span class="chip" style="background:rgba(239,68,68,0.15);color:#fca5a5;border-color:#ef4444; pointer-events: none;">Network Blacklist</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Selling Accounts</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban (Both)</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Staff/YT Impersonation</span><span class="chip" style="color:#f87171; pointer-events: none;">30d IP Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Staff Disrespect</span><span class="chip" style="color:#f87171; pointer-events: none;">100d IP Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Stat Boosting</span><span class="chip" style="color:#94a3b8; pointer-events: none;">Stats Reset</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Teaming / Assisting Hackers</span><span class="chip" style="color:#f87171; pointer-events: none;">60d Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Spawn Kill</span><span class="chip" style="color:#f87171; pointer-events: none;">30d Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Stream Snipe</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm IP Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Threats (Death, Suicide)</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Mute</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">Unapproved Links</span><span class="chip" style="color:#ef4444;border-color:rgba(239,68,68,0.4); pointer-events: none;">Perm Ban</span></div>
+            <div class="punishment-row"><span style="font-size:0.9rem;color:rgba(255,255,255,0.85);">TOS Violation</span><span class="chip" style="background:rgba(239,68,68,0.15);color:#fca5a5;border-color:#ef4444; pointer-events: none;">Network Blacklist</span></div>
+            
+            <div class="punishment-row" style="grid-column: 1 / -1; margin-top: 1rem; background: rgba(0,0,0,0.2); padding: 1.25rem; border-radius: 8px;">
+              <span style="font-size:0.9rem;color:rgba(255,255,255,0.85);font-weight:600;">Use of Hacks / Blacklisted Modifications</span>
+              <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.5rem;">
                 <span class="chip" style="color:#f87171; pointer-events: none;">Admitted: 14d</span>
                 <span class="chip" style="color:#ef4444; pointer-events: none;">Slog: 30d</span>
                 <span class="chip" style="color:#ef4444; pointer-events: none;">ScreenShare: 30d</span>
@@ -330,7 +332,7 @@
         </div>
       </section>
 
-      <!-- 6. RANK COMPASS (NEW) -->
+      <!-- 6. RANK COMPASS -->
       <section id="ranks" class="glass-panel mb-6 scroll-mt-8" style="padding:2.5rem;">
         <div class="sec-label">
           <div class="sec-icon-box"><i data-lucide="compass" style="width:18px;height:18px;color:#f5c842;"></i></div>
@@ -342,7 +344,6 @@
 
         <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:1.25rem;">
           
-          <!-- Supporter & Jr.Helper -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title">Supporter &amp; Jr.Helper</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);">Includes all VIP Perms.</p>
@@ -352,7 +353,6 @@
             </div>
           </div>
 
-          <!-- Helper -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title">Helper</div>
             <div class="cmd-list">
@@ -364,53 +364,44 @@
             </div>
           </div>
 
-          <!-- Helper+ -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title">Helper+</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">Nothing more than Helper; road to Jr.Mod.</p>
           </div>
 
-          <!-- Jr.Mod -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title">Jr.Mod</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">All 1.21.5 Staff Perms.</p>
           </div>
 
-          <!-- Mod -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title">Mod</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">All register commands.</p>
           </div>
 
-          <!-- Mod+ -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title">Mod+</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">ScreenShare Commands <strong>(ONLY IF SS VERIFIED)</strong></p>
           </div>
 
-          <!-- H.Mod -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title">H.Mod</div>
             <div class="cmd-list">
               <span class="cmd-item">/server</span> <span class="cmd-item">/notify</span> 
               <span class="cmd-item">/announce</span> <span class="cmd-item">/thunderstorm alerts</span>
             </div>
-            <p style="font-size:0.65rem;color:rgba(255,255,255,0.4);margin-top:0.5rem;">Note: Commands listed are the most common ones.</p>
           </div>
 
-          <!-- TrialAdmin -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title" style="color:#ef4444;">TrialAdmin</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">All commands mentioned in <strong>#staff-perms</strong> channel.</p>
           </div>
 
-          <!-- Admin -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title" style="color:#ef4444;">Admin</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">Full access of some plugins and Full access of Discord.</p>
           </div>
 
-          <!-- Admin+ -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title" style="color:#ef4444;">Admin+</div>
             <div class="cmd-list">
@@ -418,7 +409,6 @@
             </div>
           </div>
 
-          <!-- Sr.Admin -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title" style="color:#ef4444;">Sr.Admin</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">
@@ -428,7 +418,6 @@
             </p>
           </div>
 
-          <!-- Admin Custom -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title" style="color:#fbbf24;">Admin Custom ⭐</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">
@@ -438,7 +427,6 @@
             </p>
           </div>
 
-          <!-- Sr.Admin Custom -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title" style="color:#fbbf24;">Sr.Admin Custom 🌟</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">
@@ -448,7 +436,6 @@
             </p>
           </div>
 
-          <!-- Management -->
           <div class="glass-card" style="padding:1.25rem;">
             <div class="rank-title" style="color:#ec4899;">@Management</div>
             <p style="font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.4rem;">
@@ -471,7 +458,6 @@
   <script>
     lucide.createIcons();
 
-    // Active link highlighting on scroll
     const secIds = ['intro', 'strikes', 'promotions', 'tickets', 'punishments', 'ranks'];
     const navObs = new IntersectionObserver(entries => {
       entries.forEach(e => {
@@ -488,7 +474,6 @@
       if (el) navObs.observe(el);
     });
 
-    // Smooth scroll for nav links
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
